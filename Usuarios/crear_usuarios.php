@@ -26,7 +26,7 @@ if (pg_send_query($con, $sql_query)) {
             $datos = pg_fetch_all($res);
             $variable = $datos[0]["ft_crear_usuario"];
             //$resultado = array('estado' => $variable);
-            echo json_encode($variable) ;    
+            echo $variable ;    
             }
       else {
         // some error happened
